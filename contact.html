@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問い合わせフォーム</title>
+  </head>
+
+  <body>
+    <h1>お問い合わせフォーム</h1>
+    <form action="#" method="POST">
+      <dl>
+        <dt><label for="username">ユーザーネーム</label></dt>
+        <dd><input type="text" id="username" name="username" placeholder="なにわ男子" required></dd>
+
+        <dt><label for="password">パスワード</label></dt>
+        <dd><input type="password" id="password" name="password" minlength="8" maxlength="15" required></dd>
+
+        <dt><label for="inquiry">お問い合わせ内容</label></dt>
+        <dd><textarea id="inquiry" name="inquiry" cols="30" rows="10" placeholder="なんでもどうぞ!" required></textarea></dd>
+      </dl>
+      <input type="submit" value="送信">
+    </form>
+  </body>
+
+</html>
