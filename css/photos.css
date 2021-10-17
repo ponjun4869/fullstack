@@ -1,17 +1,20 @@
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 32px;
+  gap: 46px;
   margin-top: 60px;
 }
 
+p {
+  text-align: center;
+}
 
 /* responsive */
 @media(max-width: 600px) {
   .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 32px;
+    gap: 40px;
     margin-top: 60px;
   }
 

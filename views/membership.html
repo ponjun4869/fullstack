@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="会員登録できるページです。membership、会員登録、名前、ユーザーネーム、性別などなど">
+    <title>会員登録</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/membership.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../images/ponjun-logo.png">
+  </head>
+
+  <body>
+    <!-- header begin -->
+    <header>
+      <div class="header_content wrapper">
+        <h1><a href="index.html"><img class="header_logo" src="../images/ponjun-logo.png" alt="PonJun"></a></h1>
+        <nav>
+          <ul>
+            <li class="current"><a href="index.html">ぽんずん家（Home)</a></li>
+            <li><a href="#">愛され続けて２年</a></li>
+            <li><a href="photos.html">Photos</a></li>
+            <li><a href="movies.html">Movies</a></li>
+            <li><a href="cat-language.html">猫の方へ</a></li>
+            <li><a href="membership.html">会員登録</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- header end -->
+    <!-- form begin -->
+    <form action="" method="POST">
+      <table>
+        <tbody>
+          <!-- お名前 -->
+          <tr>
+            <th></th>
+            <td>
+              <div class="err-msg-name"></div>
+            </td>
+          </tr>
+          <tr>
+            <th><label for="name"><span>必須</span>お名前</label></th>
+            <td><input type="text" name="name" id="name" placeholder="山田孝之" autofocus></td>
+          </tr>
+          <!-- ユーザーネーム -->
+          <tr>
+            <th></th>
+            <td class="err-msg-username"></td>
+          </tr>
+          <tr>
+            <th><label for="username"><span>必須</span>ユーザーネーム</label></th>
+            <td><input type="text" name="username" id="username" placeholder="勇者ヨシヒコ"></td>
+          </tr>
+          <!-- メールアドレス -->
+          <tr>
+            <th></th>
+            <td class="err-msg-email"></td>
+          </tr>
+          <tr>
+            <th><label for="email"><span>必須</span>メールアドレス</label></th>
+            <td><input type="email" name="email" id="email" placeholder="aptx@4869.conan"></td>
+          </tr>
+          <!-- 性別 -->
+          <tr>
+            <th></th>
+            <td class="err-msg-gender"></td>
+          </tr>
+          <tr>
+            <th>性別</th>
+            <td class="button">
+              <label><input class="size-reset" type="radio" name="gender" value="male" checked>男性</label>
+              <label><input class="size-reset" type="radio" name="gender" value="female">女性</label>
+              <label><input class="size-reset" type="radio" name="gender" value="genderless">その他</label>
+            </td>
+          </tr>
+          <!-- パスワード -->
+          <tr>
+            <th></th>
+            <td class="err-msg-pass"></td>
+          </tr>
+          <tr>
+            <th><label for="password"><span>必須</span>パスワード</label></th>
+            <td><input type="password" name="password" id="password" placeholder="8文字以上の英数字"></td>
+          </tr>
+          <!-- パスワード再入力 -->
+          <tr>
+            <th></th>
+            <td class="err-msg-passre"></td>
+          </tr>
+          <tr>
+            <th><label for="pass-re"><span>必須</span>パスワード(再入力)</label></th>
+            <td><input type="password" name="pass-re" id="pass-re" placeholder="8文字以上の英数字"></td>
+          </tr>
+          <!-- プライバシーポリシーに同意する -->
+          <tr>
+            <th></th>
+            <td class="err-msg-privacy"></td>
+          </tr>
+          <tr>
+          <th><label for="privacy"><span>必須</span>プライバシーポリシーに同意する</label></th>
+          <td class="center"><input class="size-reset" type="checkbox" name="privacy" id="privacy" required></td>
+          </tr>
+          <!-- 会員登録ボタン -->
+          <tr>
+            <th></th>
+            <td><input type="submit" class="submit" value="会員登録"></td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+    <script src="../js/membership.js"></script>
+    <!-- form end -->
+    <!-- footer begin -->
+    <footer>
+      <ul>
+        <li><a href="index.html">ぽんずん家（Home）</a></li>
+        <li><a href="https://www.instagram.com/chikugram_/?hl=ja" target="_blank">Instagram</a></li>
+        <li><a href="https://www.youtube.com/channel/UC4ZDNvKjkBGUSsFBLNvfm9w/featured" target="_blank">Youtubeチャンネル</a>
+        </li>
+        <li><a href="https://www.youtube.com/c/%E3%82%82%E3%81%A1%E3%81%BE%E3%82%8B%E6%97%A5%E8%A8%98/featured"
+            target="_blank">もちまる日記</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
+      </ul>
+      <small>&copy;2021 PonJun</small>
+    </footer>
+    <!-- footer end -->
+  </body>
+
+</html>
