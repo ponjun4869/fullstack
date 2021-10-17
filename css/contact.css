@@ -1,5 +1,23 @@
+body {
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: snow;
+}
+
 .contact {
+  border-top: dashed 2px #d3a160;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+form {
+  padding: 0.5em 1em;
+  margin: 2em 0;
+  color: #5989cf;
+  background: #c6e4ff;
+  border-bottom: solid 6px #aac5de;
+  border-radius: 9px;
 }

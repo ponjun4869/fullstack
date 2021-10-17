@@ -10,6 +10,7 @@ html {
 
 body {
   color: #555;
+  background-color: whitesmoke;
   line-height: 1.5;
 }
 
@@ -151,6 +152,19 @@ small {
   font-size: 0.7rem;
 }
 
+span {
+  border-radius: 6px;
+  margin-right: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 30px;
+  display: inline-block;
+  text-align: center;
+  background: #c8625b;
+  color: #fff;
+  font-size: 10px;
+}
+
 /* responsive */
 
 @media(max-width: 600px) {
@@ -171,5 +185,6 @@ small {
   #sidebar {
     width: 100%;
   }
+
 }
  
