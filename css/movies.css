@@ -1,24 +1,24 @@
-/* 全体 */
+
 .sb-box {
   position: relative;
   overflow: hidden;
 }
 
-/* アイコン画像 */
+
 .icon-img {
   position: absolute;
   overflow: hidden;
-  top: 0; /* 画像の位置を上から0に */
-  width: 80px; /* 画像の幅 */
-  height: 80px; /* 画像の高さ */
+  top: 0; 
+  width: 80px;
+  height: 80px;
 }
 /* アイコン画像（左） */
 .icon-img-left {
-  left: 0; /* 画像の位置を左から0に */
+  left: 0;
 }
 /* アイコン画像（右） */
 .icon-img-right {
-  right: 0; /* 画像の位置を右から0に */
+  right: 0;
 }
 /* アイコン画像 */
 .icon-img img {
@@ -30,9 +30,9 @@
   position: absolute;
   width: 80px; /* ネームの最大幅を画像と同じに */
   text-align: center; /* ネームの位置をセンターに */
-  top: 83px; /* ネームの位置を上から83に */
-  color: #777; /* ネームのカラー */
-  font-size: 10px; /* ネームのフォントサイズ */
+  top: 83px; 
+  color: #777;
+  font-size: 10px;
 }
 /* アイコンネーム（左） */
 .icon-name-left {
@@ -63,8 +63,8 @@
   padding: 18px; /* 吹き出し内の上下左右の余白 */
 }
 .sb-txt > p:last-of-type {
-  padding-bottom: 0; /* 吹き出し内のテキストを改行した場合、最後のpタグにpadding-bottomをつけない */
-  margin-bottom: 0; /* 吹き出し内のテキストを改行した場合、最後のpタグにmargin-bottomをつけない */
+  padding-bottom: 0; 
+  margin-bottom: 0; 
 }
 /* 吹き出しの三角 */
 .sb-txt:before {
@@ -85,23 +85,23 @@
 .sb-txt-left:before {
   left: -7px;
   border-width: 7px 10px 7px 0;
-  border-color: transparent #fff transparent transparent; /* 背景色と同じカラーに */
+  border-color: transparent #fff transparent transparent;
 }
 .sb-txt-left:after {
-  left: -10px; /* beforeより-3px */
-  border-width: 8px 10px 8px 0; /* beforeより上下+1px */
-  border-color: transparent #eee transparent transparent; /* 縁取りと同じカラーに */
+  left: -10px; 
+  border-width: 8px 10px 8px 0;
+  border-color: transparent #eee transparent transparent; 
 }
 /* 吹き出しの三角（右） */
 .sb-txt-right:before {
   right: -7px;
   border-width: 7px 0 7px 10px;
-  border-color: transparent transparent transparent #fff; /* 背景色と同じカラーに */
+  border-color: transparent transparent transparent #fff; 
 }
 .sb-txt-right:after {
-  right: -10px; /* beforeより-3px */
-  border-width: 8px 0 8px 10px; /* beforeより上下+1px */
-  border-color: transparent transparent transparent #eee; /* 縁取りと同じカラーに */
+  right: -10px; 
+  border-width: 8px 0 8px 10px; 
+  border-color: transparent transparent transparent #eee; 
 }
 
 /* responsive */
