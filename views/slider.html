@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="ぽんすという名の可愛い生き物の紹介ページ（猫語）です。猫、ねこ、ネコに関する情報、写真、動画など">
+    <title>PonJun</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../images/ponjun-logo.png">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <style>
+      /*--------画像サイズ調整---------*/
+      img{
+        width:100%;
+      }
+    
+      /*-----------height調整----------*/
+      .slick-slide{
+        height:auto!important;
+      }
+    
+      /*-----------矢印表示----------*/
+      .slick-next{
+        right:0!important;
+      }
+      .slick-prev{
+        left:0!important;
+      }
+      .slick-arrow{
+        width: initial!important;
+        height: initial!important;
+        z-index:2!important;
+      }
+      .slick-arrow:before{
+        font-size: 30px!important;
+      }
+    </style>
+    
+  </head>
+
+  <body id="home">
+    <!-- header begin -->
+    <header>
+      <div class="header_content wrapper">
+        <h1><a href="index.html"><img class="header_logo" src="../images/ponjun-logo.png" alt="PonJun"></a></h1>
+        <nav>
+          <ul>
+            <li class="current"><a href="index.html">ぽんずん家（Home)</a></li>
+            <li><a href="animation.html">愛され続けて２年</a></li>
+            <li><a href="photos.html">Photos</a></li>
+            <li><a href="movies.html">Movies</a></li>
+            <li><a href="slider.html">猫の方へ</a></li>
+            <li><a href="membership.html">会員登録</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- header end -->
+    <div class="sec_inner">
+      <div class="slider">   
+              <div><img src="../images/sea1.JPG"></div>
+              <div><img src="../images/sea2.JPG"></div>   
+              <div><img src="../images/ponjs5.JPG"></div>
+      </div>
+    </div>
+    <!-- footer begin -->
+    <footer>
+      <ul>
+        <li><a href="index.html">ぽんずん家（Home）</a></li>
+        <li><a href="https://www.instagram.com/chikugram_/?hl=ja" target="_blank">Instagram</a></li>
+        <li><a href="https://www.youtube.com/channel/UC4ZDNvKjkBGUSsFBLNvfm9w/featured" target="_blank">Youtubeチャンネル</a></li>
+        <li><a href="https://www.youtube.com/c/%E3%82%82%E3%81%A1%E3%81%BE%E3%82%8B%E6%97%A5%E8%A8%98/featured" target="_blank">もちまる日記</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
+      </ul>
+      <small>&copy;2021 PonJun</small>
+    </footer>
+    <!-- footer end -->
+    <script>
+      $('.slider').slick({
+          autoplay: true,         //自動再生
+          autoplaySpeed: 2000,  //自動再生のスピード
+          speed: 800, //スライドするスピード
+          dots: true,//スライドしたのドット
+          arrows: true,          //左右の矢印
+          infinite: true,//スライドのループ
+          pauseOnHover: false,   //ホバーしたときにスライドを一時停止しない
+      });
+    </script>
+  </body>
+
+</html>
